@@ -101,6 +101,10 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 - Después de cada turno, se mostrarán información sobre la suposición realizada.
 - El juego terminará cuando se adivine el número.
   Se mostrará una lista de todas las tentativas de la jugadora ganadora.
+- Al terminar cada sprint, antes de la ceremonia de Sprint Review, deberás agregar
+  una nueva entrada al inicio del archivo Changelog con los avances y aprendizajes
+  del último sprint, usando las indicaciones de la [guía](https://github.com/Laboratoria/changelog-guide/)
+  para changelog de proyectos en Laboratoria
 
 ### Diagrama de Clases
 

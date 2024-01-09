@@ -2,26 +2,17 @@
 
 ## Índice
 
-- [1. Consideraciones Generales](#1-consideraciones-generales)
-- [2. Preámbulo](#2-preámbulo)
-- [3. Resumen del Proyecto](#3-resumen-del-proyecto)
-- [4. Objetivos de Aprendizaje](#4-objetivos-de-aprendizaje)
-- [5. Consideraciones Generales](#5-consideraciones-generales)
-- [6. Consideraciones Técnicas](#6-consideraciones-técnicas)
-- [7. Hitos del proyecto](#7-hitos-del-proyecto)
-- [8. Recomendaciones](#8-recomendaciones)
+- [1. Preámbulo](#1-preámbulo)
+- [2. Resumen del Proyecto](#2-resumen-del-proyecto)
+- [3. Objetivos de Aprendizaje](#3-objetivos-de-aprendizaje)
+- [4. Consideraciones Generales](#4-consideraciones-generales)
+- [5. Consideraciones Técnicas](#5-consideraciones-técnicas)
+- [6. Hitos del proyecto](#6-hitos-del-proyecto)
+- [7. Recomendaciones](#7-recomendaciones)
 
 ---
 
-## 1. Consideraciones Generales
-
-- Este proyecto debe desarrollarse de manera **individual**.
-- La estimación de tiempo para completar el proyecto es de 1 a 2 Sprints.
-- Concéntrate en adquirir conocimientos en lugar de simplemente "terminar" el proyecto.
-- Ten paciencia. No te preocupes demasiado por lo que aún no entiendes completamente.
-- Tu aprendizaje se desarrollará a medida que progreses.
-
-## 2. Preámbulo
+## 1. Preámbulo
 
 En la actualidad, Java es uno de los lenguajes de programación más utilizados en
 el mundo. A pesar de la diversidad de plataformas y herramientas disponibles, es
@@ -31,7 +22,7 @@ introducirte al mundo de Java a través de un juego simple y divertido.
 
 ![GUESS THE NUMBER](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number.png?alt=media)
 
-## 3. Resumen del Proyecto
+## 2. Resumen del Proyecto
 
 Es un juego interactivo que se desarrolla en el terminal, donde la jugadora y el
 ordenador se turnan para intentar adivinar un número aleatorio entre 1 y 100.
@@ -39,8 +30,7 @@ Deben tener en cuenta la tentativa anterior, si fue "muy alta" o "muy baja".
 
 ![GUESS THE NUMBER DEMO](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number-demo.gif?alt=media)
 
-## 4. Objetivos de Aprendizaje
-
+## 3. Objetivos de Aprendizaje
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
@@ -88,7 +78,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 - [ ] **Lenguaje de Modelado Unificado (UML, class diagrams)**
 
-## 5. Consideraciones Generales
+## 4. Consideraciones Generales
 
 - Duración del proyecto: Se estima que este proyecto tomará de 1 a 2 sprints.
 - Debe implementarse en Java. Las únicas dependencias externas que se pueden utilizar
@@ -178,7 +168,7 @@ jugadora "remota" o incluso diferentes niveles de dificultad.
   número secreto. Debe mostrarse un mensaje de fin de juego,
   así como una lista de todas las tentativas realizadas por la jugadora ganadora.
 
-## 6. Consideraciones Técnicas
+## 5. Consideraciones Técnicas
 
 - El juego se llevará a cabo en el terminal usando Java.
 - La lógica del juego se basará en estructuras de control, incluyendo bucles,
@@ -189,7 +179,7 @@ jugadora "remota" o incluso diferentes niveles de dificultad.
 - Se deben realizar **pruebas unitarias** para sus clases y métodos
   utilizando JUnit y simulación de generación de números aleatorios con Mockito.
 
-## 7. Hitos del proyecto
+## 6. Hitos del proyecto
 
 No trabajes como si fueras una fábrica haciendo una clase toda y luego otra.
 El riesgo de trabajar así es que obtendrás muchas partes sin ninguna o con media
@@ -332,7 +322,7 @@ sean más inteligentes. Estos número pueden considerar la información
 sobre si el número es alto o bajo en relación con el número objetivo,
 haciendo que el juego sea más emocionante.
 
-## 8. Recomendaciones
+## 7. Recomendaciones
 
 **Documentación de Java**: La documentación oficial de Java es una excelente
 fuente de información sobre las clases y métodos disponibles en

@@ -8,11 +8,11 @@ public class ComputerPlayer extends Player {
     }
     @Override
     public int makeGuess() {
-        //Generar
+        //Genera el numero
         int myGuess = random.nextInt(100) + 1;
-        //Guardar
+        //Guarda el numero
         this.guesses.add(myGuess);
-        //Retornar
+        //Retorna el numero
         return myGuess;
     }
 }

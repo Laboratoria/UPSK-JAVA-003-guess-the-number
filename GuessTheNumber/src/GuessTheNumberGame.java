@@ -35,8 +35,8 @@ public class GuessTheNumberGame {
 
         System.out.println("\033[1;32m" + player.getName() + " 🎉 FELICIDADES, HAS GANADO! ");
         System.out.println("El número ganador es " + targetNumber);
-        System.out.println("El total de intentos: " + guesses.size());
-        System.out.println("Tus suposiciones fueron: " + guesses + "\033[0m");
+        System.out.println("El total de intentos fueron: " + guesses.size());
+        System.out.println("Tus suposiciones fueron: " + guesses);
 
         return true;
     }

@@ -9,7 +9,7 @@ public class HumanPlayer extends Player {
     }
 
     @Override
-    public int makeGuess() {
+    public int makeGuess(int lowerNumber, int higherNumber) {
         System.out.println("\u001B[44m\u001B[30m" + getName() + " ingresa el número ganador aquí: \u001B[0m");
         //Generar
         int myGuess = scanner.nextInt();

@@ -7,10 +7,10 @@ public abstract class Player {
 
     protected Player(String name) {
         this.name = name;
-        this.guesses = new ArrayList<Integer>();
+        this.guesses = new ArrayList<>();
     }
 
-    public abstract int makeGuess();
+    public abstract int makeGuess(int lowerNumber, int higherNumber);
     public String getName() {
         return name;
     }

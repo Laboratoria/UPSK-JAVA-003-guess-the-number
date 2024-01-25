@@ -10,6 +10,7 @@ public class GuessTheNumberGame {
 
     private static boolean checkGuess(Player player) {
 
+
         int guess = player.makeGuess(lowerNumber, higherNumber);
         // cada guess debe ser comparado con targetNumber
         if (guess != targetNumber) {
@@ -48,7 +49,16 @@ public class GuessTheNumberGame {
         List<Player> players = new ArrayList<>();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Número de jugadores: ");
+
+        System.out.println("\033[1;35m");
+        System.out.println("*********************************************");
+        System.out.println("*           ¡Bienvenido al Juego de         *");
+        System.out.println("*              Adivinar el Número!          *");
+        System.out.println("*********************************************");
+        System.out.println("\033[0m");
+
+
+        System.out.print("¿Cuántos jugadores participarán?: ");
         int numPlayers = scanner.nextInt();
         scanner.nextLine();
 

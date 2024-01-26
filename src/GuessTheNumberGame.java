@@ -60,6 +60,7 @@ public class GuessTheNumberGame {
             System.out.println(player.getName() + " guessed too high.");
         } else {
             System.out.println(player.getName() + " guessed correctly!");
+            gameWon = true;
         }
     }
 }

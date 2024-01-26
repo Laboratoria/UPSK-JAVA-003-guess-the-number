@@ -1,8 +1,15 @@
-import java.util.Scanner;
+import java.util.ArrayList;
+
 
 public abstract class Player {
-    private String name;
-    protected int[] guesses;
+    private final String name;
+
+    public Player() {
+
+        this.name = null;  // o this.name = "NombrePredeterminado";
+        this.guesses = new ArrayList<>();
+    }
+    protected ArrayList<Integer> guesses;
 
     public abstract int makeGuess();
 
@@ -10,12 +17,12 @@ public abstract class Player {
         return name;
 
 
-    };
+    }
 
-    public int[] getGuesses(){
+    public ArrayList<Integer> getGuesses(){
         return guesses;
 
-    };
+    }
 
 
 

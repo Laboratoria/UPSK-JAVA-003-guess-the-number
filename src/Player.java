@@ -3,13 +3,14 @@ import java.util.ArrayList;
 
 public abstract class Player {
     private final String name;
+    protected ArrayList<Integer> guesses;
 
     public Player() {
 
         this.name = null;  // o this.name = "NombrePredeterminado";
         this.guesses = new ArrayList<>();
     }
-    protected ArrayList<Integer> guesses;
+
 
     public abstract int makeGuess();
 

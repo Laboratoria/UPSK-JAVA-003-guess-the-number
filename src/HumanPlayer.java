@@ -8,7 +8,7 @@ public class HumanPlayer extends Player{
     public String getName(){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("¿Cúal es tu nombre?: ");
+        System.out.println("¿Cúal es tu nombre? (presiona Enter después de ingresar tu nombre) : ");
 
 
 
@@ -26,7 +26,7 @@ public class HumanPlayer extends Player{
 
             Scanner sc = new Scanner(System.in);
 
-            System.out.println("Ingrese su suposición: ");
+            System.out.println("Ingrese su suposición: \n");
             int guess = Integer.parseInt(sc.nextLine());
 
             //Agrega los intentos al array
@@ -40,7 +40,6 @@ public class HumanPlayer extends Player{
         public ArrayList<Integer> getGuesses() {
 
             //Devuelve nuestro arreglo para suposiciones
-
             return guesses;
 
         }

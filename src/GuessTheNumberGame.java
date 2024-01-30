@@ -24,13 +24,13 @@ public class GuessTheNumberGame {
         //tomar el nombre
         //tomar la suposición
 
-        System.out.println("----¡ Bienvenido a Guess the Number !-----");
+        System.out.println("----¡ Bienvenido a Guess the Number !----- \n\nDebes adivinar un número entre 1 y 100 \n" );
 
 
         //HumanPlayer humanPlayer = new HumanPlayer();
         Player player = new HumanPlayer();
 
-        System.out.println("hola " + player.getName());
+        System.out.println("hola " + player.getName() + " \n");
 
         //checkGuess(player);
 
@@ -45,7 +45,7 @@ public class GuessTheNumberGame {
 
         targetNumber = random.nextInt(max - min + 1) + min;
 
-        System.out.println( " Aquí el número aleatorio " + targetNumber);
+        System.out.println( "Aquí el número aleatorio " + targetNumber + "\n");
 
         checkGuess(player);
 
@@ -69,9 +69,9 @@ public class GuessTheNumberGame {
         while (guess != targetNumber) {
             intentos++;
             if (guess < targetNumber) {
-                System.out.println("¡ Incorrecto ! Ingresa uno más alto");
+                System.out.println("¡ Incorrecto ! Ingresa uno más alto \n");
             } if (guess > targetNumber) {
-                System.out.println("¡ Incorrecto ! Ingresa uno más bajo");
+                System.out.println("¡ Incorrecto ! Ingresa uno más bajo \n");
             }
             guess = player.makeGuess(); // Actualiza la suposición del jugador
         }

@@ -10,7 +10,9 @@ public class HumanPlayer extends Player {
 
     @Override
     public int makeGuess() {
-        System.out.print(name + ", enter your guess: ");
+
+        // Imprimir mensaje en color púrpura
+        System.out.print("\u001B[35m" + name + ", enter your guess: " + "\u001B[0m");
         int guess = scanner.nextInt();
         guesses.add(guess);
         return guess;

@@ -4,11 +4,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GuessTheNumberGame {
-    private static int targetNumber;
-    private static int lowerNumber = 0;
-    private static int higherNumber = 100;
+    static int targetNumber;
+    static int lowerNumber = 0;
+    static int higherNumber = 100;
 
-    private static boolean checkGuess(Player player) {
+    static boolean checkGuess(Player player) {
 
 
         int guess = player.makeGuess(lowerNumber, higherNumber);

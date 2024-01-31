@@ -13,7 +13,7 @@ public class ComputerPlayerTest {
         ComputerPlayer computerPlayer = new ComputerPlayer("Computadora");
         int guess = computerPlayer.makeGuess(lowerNumber, higherNumber);
 
-        //TESTEAR QUE EL NUMERO DEL GUESS ESTE ENTRE 0 Y 1
+        //TESTEAR QUE EL NUMERO DEL GUESS ESTE ENTRE 0 Y 100
         assertTrue(guess >= lowerNumber && guess <= higherNumber);
 
         //TESTEAR QUE SE AGREGUE UN NUMERO POR LLAMADA

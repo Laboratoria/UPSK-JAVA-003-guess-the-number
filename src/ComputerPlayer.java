@@ -6,6 +6,7 @@ public class ComputerPlayer extends Player {
     @Override
     public int makeGuess() {
         int guess = generateRandomGuess();
+        System.out.println("Computer guessed: " + guess);
         guesses.add(guess);
         return guess;
     }

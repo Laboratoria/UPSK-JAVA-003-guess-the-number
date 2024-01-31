@@ -12,21 +12,31 @@ public class GuessTheNumberGame {
     private static boolean gameWon = false;
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        //solicitar al jugador humano que ingrese el nombre
+        System.out.print("Human, enter your name: ");
+        String humanName = scanner.nextLine();
+
+        //crear jugador humano con el nombre dado
+        HumanPlayer humanPlayer = new HumanPlayer(humanName);
+
         initializeGame();
-        playGame();
+        playGame(humanPlayer);
+        scanner.close();
     }
 
     private static void initializeGame() {
         targetNumber = random.nextInt(100) + 1;
     }
 
-    private static void playGame() {
+    private static void playGame(HumanPlayer humanPlayer) {
         Scanner scanner = new Scanner(System.in);
 
-        // Crear jugadores
-        HumanPlayer humanPlayer = new HumanPlayer("Human");
-        ComputerPlayer computerPlayer = new ComputerPlayer("Computer");
-        //Mensaje de bienvenida
+
+        // Crear jugador computadora
+         ComputerPlayer computerPlayer = new ComputerPlayer("Computer");
+
+         //Mensaje de bienvenida
         System.out.println("\033[1;35m");
         System.out.println("*********************************************");
         System.out.println("*                  ¡Welcome to the          *");

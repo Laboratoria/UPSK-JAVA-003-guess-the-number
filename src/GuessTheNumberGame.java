@@ -7,7 +7,6 @@ public class GuessTheNumberGame {
     private int targetNumber;
     private HumanPlayer humanPlayer;
     private ComputerPlayer computerPlayer;
-
     private boolean gameOver;
 
     public GuessTheNumberGame() {
@@ -15,6 +14,7 @@ public class GuessTheNumberGame {
         targetNumber = random.nextInt(101);
         gameOver = true;
     }
+
     public static void main (String[] args) {
         GuessTheNumberGame game = new GuessTheNumberGame();
         game.playGame();
@@ -74,6 +74,13 @@ public class GuessTheNumberGame {
         System.out.println();
 
     }
+    public HumanPlayer getHumanPlayer() {
+        return humanPlayer;
+    }
+    public boolean isGameOver() {
+        return gameOver;
+    }
+
 
 }
 

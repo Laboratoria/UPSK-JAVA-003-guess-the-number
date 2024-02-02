@@ -17,4 +17,9 @@ public class HumanPlayer extends Player {
         guesses.add(guess);
         return guess;
     }
+
+    // Método para establecer el scanner
+    public void setScanner(Scanner scanner) {
+        this.scanner = scanner;
+   }
 }

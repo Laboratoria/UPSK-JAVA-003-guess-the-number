@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
 public abstract class Player {
     protected String name;
     protected List<Integer> guesses;
@@ -16,7 +17,12 @@ public abstract class Player {
         return name;
     }
 
-    public List<Integer> getGuesses() {
+    public List<Integer> getGuessHistory() {
         return guesses;
     }
+
+    public void setName(String playerName) {
+        this.name = playerName;
+    }
+
 }

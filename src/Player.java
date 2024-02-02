@@ -6,9 +6,7 @@ public abstract class Player {
     protected  String name;
     protected  List<Integer> guesses= new ArrayList<>();
 
-   /* public Player() {
 
-    }*/
 
 
     public abstract int makeGuess();

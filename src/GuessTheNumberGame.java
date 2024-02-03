@@ -55,6 +55,10 @@ public class GuessTheNumberGame {
 
 
         Player currentPlayer = humanPlayer;
+        //sumar intentos de cada uno
+        int humanAttempts = 1; //iniciamos en 1 para que nos entregue el número de intentos
+        int computerAttempts=1;
+
 
 
         //Ejecuta un turno
@@ -62,21 +66,12 @@ public class GuessTheNumberGame {
 
 
             //Usar condicionales para los turnos
-            //System.out.println("Turno de " + currentPlayer.name + ":\n");
 
 
             //usar condicionales para alternar turnos
 
             //obtiene la suposición
             int guess = currentPlayer.makeGuess();
-
-
-
-            //sumar intentos de cada uno
-            int humanAttempts = 1; //iniciamos en 1 para que nos entregue el número de intentos
-            int computerAttempts=1;
-
-
 
 
             //si el número es igual
@@ -96,7 +91,7 @@ public class GuessTheNumberGame {
 
                 }
 
-                //intentos++;
+
                 if (guess < targetNumber) {
                     System.out.println("¡ Incorrecto ! Ingresa uno más alto \n");
                 } if (guess > targetNumber) {
@@ -122,22 +117,25 @@ public class GuessTheNumberGame {
 
 
 
-
-            //muestra mensaje final y el historial de cada jugador
-
-            System.out.println("¡Felicidades,  has adivinado el número secreto en " + humanAttempts + " intentos\n");
-            System.out.println("La computadora realizó " + computerAttempts + " intentos\n");
-            System.out.println("Tu historial de suposiciones de suposiciones es : "  + humanPlayer.getGuesses());
-            System.out.println("Historial de suposiciones de la computadora : " + computerPlayer.getGuesses());
-
-            // Verificar quién ganó
-
-
-
-
-
-
             if (guess == targetNumber) {
+
+                //muestra mensaje final y el historial de cada jugador
+
+
+                if (currentPlayer == humanPlayer){
+                    System.out.println("¡Felicidades,  has adivinado el número secreto en " + humanAttempts + " intentos\n");
+                    System.out.println("La computadora realizó " + computerAttempts + " intentos\n");
+                    System.out.println("Tu historial de suposiciones de suposiciones es : "  + humanPlayer.getGuesses());
+                    System.out.println("Historial de suposiciones de la computadora : " + computerPlayer.getGuesses());
+
+
+
+                }else{
+                    System.out.println("La computadora ha ganado, mejor suerte a la próxima");
+                    System.out.println("La computadora realizó " + computerAttempts + " intentos\n");
+                    System.out.println("Tu historial de suposiciones es: "  + humanPlayer.getGuesses());
+                    System.out.println("Historial de suposiciones de la computadora : " + computerPlayer.getGuesses());
+                }
 
                 break; // Terminar el juego
             }

@@ -5,10 +5,6 @@ public class HumanPlayer extends Player{
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    /*public HumanPlayer(String name) {
-        this.name = name;
-        guesses = new ArrayList<>();
-    }*/
 
 
     public HumanPlayer (){
@@ -34,12 +30,9 @@ public class HumanPlayer extends Player{
     }
 
 
-
-
         //tomar la suposición de la jugadora
         public  int makeGuess() {
 
-            //Scanner sc = new Scanner(System.in);
 
             System.out.println("Ingrese su suposición: \n");
             int guess = Integer.parseInt(scanner.nextLine());

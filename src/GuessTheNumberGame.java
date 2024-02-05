@@ -45,34 +45,40 @@ public class GuessTheNumberGame {
 
         System.out.println( "Aquí el número aleatorio " + targetNumber + "\n");
 
-        checkGuess(humanPlayer,computerPlayer);
+        boolean humanWon = checkGuess(humanPlayer, computerPlayer);
+
+        if (humanWon) {
+            System.out.println("¡Has vencido a la computadora!\n");
+        } else {
+            System.out.println("La computadora te ha vencido por ahora");
+        }
+        System.out.println("Tu historial de suposiciones es: "  + humanPlayer.getGuesses());
+        System.out.println("Historial de suposiciones de la computadora : " + computerPlayer.getGuesses());
+
+      //  checkGuess(humanPlayer,computerPlayer);
 
 
 
 
     }
-    private static void checkGuess(Player humanPlayer, Player computerPlayer) {
+    private static boolean checkGuess(Player humanPlayer, Player computerPlayer) {
 
 
         Player currentPlayer = humanPlayer;
         //sumar intentos de cada uno
         int humanAttempts = 1; //iniciamos en 1 para que nos entregue el número de intentos
-        int computerAttempts=1;
+        int computerAttempts=0;//el de computer empieza en 0
 
 
 
         //Ejecuta un turno
         while (true){
 
-
             //Usar condicionales para los turnos
-
-
             //usar condicionales para alternar turnos
 
             //obtiene la suposición
             int guess = currentPlayer.makeGuess();
-
 
             //si el número es igual
             //si el número es mayor
@@ -107,49 +113,34 @@ public class GuessTheNumberGame {
 
                 }
 
-
-
                 guess = currentPlayer.makeGuess(); // Actualiza la suposición del jugador
 
-
-
             }
-
-
 
             if (guess == targetNumber) {
 
                 //muestra mensaje final y el historial de cada jugador
 
-
                 if (currentPlayer == humanPlayer){
-                    System.out.println("¡Felicidades,  has adivinado el número secreto en " + humanAttempts + " intentos\n");
+                    System.out.println("¡Felicidades,  has adivinado el número secreto en " + humanAttempts + " intentos");
                     System.out.println("La computadora realizó " + computerAttempts + " intentos\n");
-                    System.out.println("Tu historial de suposiciones de suposiciones es : "  + humanPlayer.getGuesses());
-                    System.out.println("Historial de suposiciones de la computadora : " + computerPlayer.getGuesses());
+
 
 
 
                 }else{
-                    System.out.println("La computadora ha ganado, mejor suerte a la próxima");
                     System.out.println("La computadora realizó " + computerAttempts + " intentos\n");
-                    System.out.println("Tu historial de suposiciones es: "  + humanPlayer.getGuesses());
-                    System.out.println("Historial de suposiciones de la computadora : " + computerPlayer.getGuesses());
+                    System.out.println("Mejor suerte a la próxima");
+
+
                 }
 
-                break; // Terminar el juego
+
+                return currentPlayer == humanPlayer;
+               // break; // Terminar el juego
             }
 
-
-
-
         }
-
-
-
-
-
-
 
         // RECUERDA CONTINUAR EL JUEGO EN CASO INCORRECTO
         //EL ALEATORIO SOLO SE DEBE MOSTRAR UNA VEZ HASTA QUE ALGUIEN ADIVINE

@@ -7,14 +7,25 @@ public class GuessTheNumberGame {
     private static final String ANSI_PURPLE = "\u001B[35m";
     private static final String ANSI_CYAN = "\u001B[36m";
     private static final String ANSI_YELLOW = "\u001B[33m";
+    private static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+    private static final String ANSI_BLACK = "\u001B[30m";
     private static Random random = new Random();
     private static int targetNumber;
     private static boolean gameWon = false;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        //Mensaje de bienvenida
+        System.out.println("\u001B[1;32m");
+        System.out.println("*********************************************");
+        System.out.println("*                  ¡Welcome to the          *");
+        System.out.println("*              Guess the Number Game!       *");
+        System.out.println("*********************************************");
+        System.out.println("\u001B[0m");
+        //Instrucciones del juego
+        System.out.println(ANSI_WHITE_BACKGROUND + ANSI_BLACK + "The game consists of guessing a number from 1 to 100, and beating the ComputerPlayer 🎮" + ANSI_RESET);
         //solicitar al jugador humano que ingrese el nombre
-        System.out.print("Human, enter your name: ");
+        System.out.print(ANSI_PURPLE + "Human, enter your name: ");
         String humanName = scanner.nextLine();
 
         //crear jugador humano con el nombre dado
@@ -36,13 +47,8 @@ public class GuessTheNumberGame {
         // Crear jugador computadora
          ComputerPlayer computerPlayer = new ComputerPlayer("Computer");
 
-         //Mensaje de bienvenida
-        System.out.println("\033[1;35m");
-        System.out.println("*********************************************");
-        System.out.println("*                  ¡Welcome to the          *");
-        System.out.println("*              Guess the Number Game!       *");
-        System.out.println("*********************************************");
-        System.out.println("\033[0m");
+
+
 
         // Iniciar turnos alternados
         while (!gameWon) {

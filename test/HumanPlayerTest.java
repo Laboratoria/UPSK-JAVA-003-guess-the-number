@@ -54,6 +54,7 @@ public class HumanPlayerTest {
         //Hacer la igualdad con lo que se espera
         //Devuelve la línea esperada
         //Verifica si es correcto
+        //Terminar test de HumanPlayer
 
     }
 

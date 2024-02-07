@@ -24,7 +24,7 @@ public class GuessTheNumberGame {
         //tomar el nombre
         //tomar la suposición
 
-        System.out.println("----¡ Bienvenido a Guess the Number !----- \n\nDebes adivinar un número entre 1 y 100 \n" );
+        System.out.println("----¡ Bienvenido a Think Of a Number !----- \n\nDebes adivinar un número entre 1 y 100 \n" );
 
 
         //HumanPlayer humanPlayer = new HumanPlayer();
@@ -55,7 +55,7 @@ public class GuessTheNumberGame {
         System.out.println("Tu historial de suposiciones es: "  + humanPlayer.getGuesses());
         System.out.println("Historial de suposiciones de la computadora : " + computerPlayer.getGuesses());
 
-      //  checkGuess(humanPlayer,computerPlayer);
+
 
 
 

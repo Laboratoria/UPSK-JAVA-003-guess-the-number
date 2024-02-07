@@ -7,6 +7,7 @@ public class HumanPlayer extends Player{
 
 
 
+
     public HumanPlayer (){
 
         guesses= new ArrayList<>();
@@ -53,4 +54,5 @@ public class HumanPlayer extends Player{
         }
 
 
-    }
+
+}

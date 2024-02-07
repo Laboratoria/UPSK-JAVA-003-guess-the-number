@@ -1,10 +1,11 @@
 import org.junit.jupiter.api.Test;
 //import org.mockito.Mockito;
 
-//import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Scanner;
 //import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -42,22 +43,29 @@ public class HumanPlayerTest {
         int guessInt = Integer.parseInt(guess);
 
 
+
         //verifica si es correcto
         assertEquals(42,guessInt);
+        // Verificamos que la suposición se agregó a la lista de conjeturas
 
     }
 
     @Test
     public void getGuessesMock(){
 
-        // Crear un mock de Scanner
-        //Hacer la igualdad con lo que se espera
-        //Devuelve la línea esperada
-        //Verifica si es correcto
-        //Terminar test de HumanPlayer
+        // Crear un ArrayList<String> simulado
+        ArrayList mockList = mock(ArrayList.class);
+
+     // Especificar el comportamiento del objeto simulado
+        // Simular la entrada en el índice 0
+        when(mockList.get(0)).thenReturn("Entrada 1");
+        // Simular la entrada en el índice 1
+        when(mockList.get(1)).thenReturn("Entrada 2");
+        // Simular la entrada índice 2
+        when(mockList.get(2)).thenReturn("Entrada 3");
+
 
     }
-
 
 
 

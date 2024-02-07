@@ -18,6 +18,8 @@ Este proyecto implementa un juego de adivinanza de números en Java. El juego co
 2. Abre el proyecto en tu IDE favorito.
 3. Ejecuta el archivo `GuessTheNumberGame.java` para comenzar el juego.
 
+![Imagen del juego](Juego1.png)
+![Imagen del juego](juego2.png)
 ## Requisitos
 - Java JDK 8 o superior.
 
@@ -60,6 +62,28 @@ GuessTheNumberGame/
 └── test/
 ├── ComputerPlayerTest.java
 └── HumanPlayerTest.java
+
+## Tests
+
+### Descripción de los Tests
+
+En este proyecto, se han incluido tests para garantizar el correcto funcionamiento de las principales funcionalidades. A continuación, se describe cada uno de los tests realizados:
+
+#### GuessTheNumberGameTest
+
+- `testCheckGuess_HumanGuessTooHigh`: Este test verifica que el método `checkGuess` maneje correctamente el caso en que la suposición del jugador humano sea demasiado alta.
+- `testCheckGuess_HumanGuessCorrect`: En este test se asegura que el método `checkGuess` funcione correctamente cuando la suposición del jugador humano es correcta.
+![juegoTest3.png](juegoTest3.png)
+#### ComputerPlayerTest
+
+- `testGeneratedGuessInRange`: Este test comprueba que el método `makeGuess` del jugador de la computadora genere suposiciones dentro del rango esperado.
+
+![juegoTest2.png](juegoTest2.png)
+#### HumanPlayerTest
+
+- `testMakeGuess`: Verifica que el método `makeGuess` del jugador humano funcione correctamente al aceptar la entrada del usuario.
+- `testGetName`: Este test asegura que el método `getName`
+![juegoTest1.png](juegoTest1.png)
 
 ## Desarrollo y Contribución
 Si deseas contribuir al proyecto, puedes seguir estos pasos:

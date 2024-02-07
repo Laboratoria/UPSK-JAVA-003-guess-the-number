@@ -7,7 +7,7 @@
 - [3. Consideraciones Generales y como jugar](#3-consideraciones-generales-y-como-jugar)
 - [4. Consideraciones Técnicas](#4-consideraciones-técnicas)
 - [5. Diagrama de Clases](#5-diagrama-de-clases)
-- 
+
 
 
 ---
@@ -15,13 +15,11 @@
 ## 1. Preámbulo
 
 Adivinar un número es una forma de acertijo sencillo donde se pone a prueba tu lógica y razonamiento para encontrar un número en la menor cantidad de intentos posibles. Un desafío mental que estimula el pensamiento abstracto.  
-![GUESS THE NUMBER](Guess_2.png)
+![GUESS THE NUMBER](Guess_3.png)
 
 ## 2. Resumen del Proyecto
 
 Piensa un Número es un juego donde tendrás que competir contra la computadora para adivinar un número secreto aleatorio que está entre 1 y 100 al interpretar las pistas proporcionadas por el juego en cuanto a tus suposiciones.
-
-![GUESS THE NUMBER DEMO](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number-demo.gif?alt=media)
 
 
 ## 3. Consideraciones Generales y como jugar
@@ -37,6 +35,10 @@ Este juego funciona en el terminal, lugar en que realizaremos todas nuestras sup
 - El juego te indicará si tu suposición debe ser más alta o más baja.
 - Al ganar se muestra un mensaje de felicitaciones, historial de suposiciones y la cantidad de intentos de ambos jugadores.
 - Al perder se muestra un mensaje correspondiente junto al historial de suposiciones e intentos.
+
+### Demo del juego
+
+![GUESS THE NUMBER DEMO](Think-Of-a-Number.gif)
 
 
 **_¡Diviértete adivinando el número secreto! 🎲🎮_**
@@ -55,7 +57,7 @@ Este juego funciona en el terminal, lugar en que realizaremos todas nuestras sup
   utilizando JUnit y simulación de generación de números aleatorios con Mockito.
 
 
-### 5. Diagrama de Clases
+## 5. Diagrama de Clases
 
 ![Diagrama de Clases](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/class-diagram.png?alt=media)
 
